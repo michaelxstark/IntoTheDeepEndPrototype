@@ -146,7 +146,7 @@ function setup() {
   del.wet.value = 0.25;
   del.feedback.value = 0.25;
   rev = new Tone.Reverb(2).toDestination();
-  rev.wet.value = 0.3;
+  rev.wet.value = 0.05;
 
   synth.connect(del);
   del.connect(rev);
