@@ -203,9 +203,9 @@ function draw() {
 
     // second quater
 
-    for (let i = (width / 2); i < width; i++){
+    for (let i = width*0.5; i < width; i++){
        if (i % 10 == 0){
-         line(i, height*0.25, i, (height * 0.5)*abs(sin(radians(frameCount+i))));
+         line(i, height*0.125, i, (height * 0.5)*abs(sin(radians(frameCount+i))));
        }
     }
 
@@ -364,6 +364,15 @@ function draw() {
   }
 
 
+}
+
+
+// Add touchStarted function to handle touch events and prevent default behavior
+function touchStarted() {
+  event.preventDefault();
+  // Call mousePressed function to handle touch events similarly
+  mousePressed();
+  return false; // Prevent default behavior
 }
 
 
