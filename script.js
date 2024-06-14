@@ -1,6 +1,6 @@
 // variables for screen 1
 
-let state = 0;
+let state;
 let line1Screen1 = "This is an informative, interactive online application for improvisational performances in electronic music.";
 let line2Screen1 = "You will be presented with several impulse questions and statements.";
 let line3Screen1 = "You can explore these by contmeplation and reflection.";
@@ -27,8 +27,8 @@ function what() {
   liner = "";
   counter = 0;
   lineCount = 0;
-  yStart = height*0.125;
-  xStart = width*0.125;
+  yStart = height*0.05;
+  xStart = width*0.05;
 }
 
 
@@ -120,8 +120,8 @@ function setup() {
   noFill();
   textFont(font);
 
-  yStart = height * 0.125;
-  xStart = width * 0.125;
+  yStart = height * 0.05;
+  xStart = width * 0.05;
 
   synth = new Tone.FMSynth({
                             oscillator: {type: "sine",},
@@ -242,7 +242,7 @@ function draw() {
       push();
       fill(0);
       for (let s = 0; s < question1.length; s++){
-        text(question1[s], width*0.2 - question1[0].length, height*0.2+s*height*0.05);
+        text(question1[s], width*0.05 - question1[0].length, height*0.05+s*height*0.05);
       }
       pop();
     }
@@ -252,7 +252,7 @@ function draw() {
       push();
       fill(0);
       for (let s = 0; s < question1.length; s++){
-        text(question2[s], width*0.2 - question1[0].length, height*0.2+s*height*0.05);
+        text(question2[s], width*0.05 - question1[0].length, height*0.05+s*height*0.05);
       }
       pop();
     }
@@ -262,7 +262,7 @@ function draw() {
       push();
       fill(0);
       for (let s = 0; s < question1.length; s++){
-        text(question3[s], width*0.2 - question1[0].length, height*0.2+s*height*0.05);
+        text(question3[s], width*0.05 - question1[0].length, height*0.05+s*height*0.05);
       }
       pop();
     }
@@ -272,7 +272,7 @@ function draw() {
       push();
       fill(0);
       for (let s = 0; s < question1.length; s++){
-        text(question4[s], width*0.2 - question1[0].length, height*0.2+s*height*0.05);
+        text(question4[s], width*0.05 - question1[0].length, height*0.05+s*height*0.05);
       }
       pop();
     }
