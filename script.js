@@ -204,9 +204,7 @@ function draw() {
     // second quater
 
     for (let i = width*0.25; i < width; i++){
-       if (i % 2 == 0){
-         line(i, height*0.25, i, (height * 0.5)*sin(radians(frameCount+i)));
-       }
+      line(i, height*0.25, i, (height * 0.5)*abs(sin(radians(frameCount+i))));
     }
 
 
