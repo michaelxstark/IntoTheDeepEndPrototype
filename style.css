@@ -1,0 +1,32 @@
+
+@font-face { font-family: BasierSquareMono-Regular; src: url('fonts/BasierSquareMono-Regular.otf'); }
+@font-face { font-family: TAYBirdie; src: url('fonts/TAYBirdie.otf'); }
+/* CSS for positioning canvas */
+#canvas-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center vertically as well */
+  height: 100%; /* Ensure the container takes full height */
+
+}
+
+/* Ensure the parent container takes full height */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: TAYBirdie;
+  font-size: 20px;
+}
+
+/* Ensure the container containing canvas takes full height */
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15%;
+}
+
+#mybutton{
+  margin-bottom: 2.5%;
+  font-family: BasierSquareMono-Regular;
+}
