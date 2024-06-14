@@ -7,7 +7,7 @@ let line3Screen1 = "in electronic music.";
 let line4Screen1 = "You will be presented with several";
 let line5Screen1 = "impulse questions and statements.";
 let line6Screen1 = "You can explore these";
-let line7Screen1 = "by contmeplation and reflection.";
+let line7Screen1 = "by contemplation and reflection.";
 let line8Screen1 = "Alternatively, you can apply them in practice";
 let line9Screen1 = "using the virtual instrument";
 let line10Screen1 = "provided by this platform.";
@@ -303,7 +303,7 @@ function draw() {
 
     push();
     fill(0);
-    text("delay time", width*0.1, 10);
+    text("delay", width*0.1, 10);
     pop();
 
 
@@ -323,7 +323,7 @@ function draw() {
 
     push();
     fill(0);
-    text("fm amount", width*0.3, 10);
+    text("fm", width*0.3, 10);
     pop();
 
 
