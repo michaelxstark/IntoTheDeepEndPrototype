@@ -205,7 +205,7 @@ function draw() {
 
     for (let i = Math.floor(width*0.5); i < width; i++){
       if (i % 5 == 0){
-        line(i, height*0.5, i, (height * 0.5)*abs(sin(radians(frameCount+i))));
+        line(i, height*0.25, i, (height * 0.5)*abs(sin(radians(frameCount+i))));
       }
     }
 
