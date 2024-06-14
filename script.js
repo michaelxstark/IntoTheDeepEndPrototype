@@ -367,15 +367,6 @@ function draw() {
 }
 
 
-// Add touchStarted function to handle touch events and prevent default behavior
-function touchStarted() {
-  event.preventDefault();
-  // Call mousePressed function to handle touch events similarly
-  mousePressed();
-  return false; // Prevent default behavior
-}
-
-
 function mousePressed(){
   if(state == 2 && mouseY > height*0.5 && mouseY <= height){
 

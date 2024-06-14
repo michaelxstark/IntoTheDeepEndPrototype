@@ -18,6 +18,10 @@ body, html {
   font-size: 16px;
 }
 
+h1{
+  font-size: 20px;
+}
+
 /* Ensure the container containing canvas takes full height */
 .container {
   height: 100%;
@@ -26,6 +30,13 @@ body, html {
   margin-top: 2.5%;
   margin-bottom: 2.5%;
 }
+
+.no-select {
+      -webkit-user-select: none; /* Chrome/Safari */
+      -moz-user-select: none; /* Firefox */
+      -ms-user-select: none; /* IE10+ */
+      user-select: none; /* Standard */
+    }
 
 #mybutton{
   margin-bottom: 2.5%;
