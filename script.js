@@ -205,7 +205,7 @@ function draw() {
 
     for (let i = (width / 2); i < width; i++){
        if (i % 10 == 0){
-         line(i, height*0.25, i, (height / 2)*abs(sin(radians(frameCount+i))));
+         line(i, height*0.25, i, (height * 0.5)*abs(sin(radians(frameCount+i))));
        }
     }
 
@@ -393,24 +393,3 @@ function mousePressed(){
   }
 
 }
-
-
-
-function touchStarted () {
-  var fs = fullscreen();
-  if (!fs) {
-    fullscreen(true);
-  }
-}
-
-/* full screening will change the size of the canvas */
-function windowResized() {
-  resizeCanvas(windowWidth, windowHeight);
-}
-
-/* prevents the mobile browser from processing some default
- * touch events, like swiping left for "back" or scrolling the page.
- */
-document.ontouchmove = function(event) {
-    event.preventDefault();
-};
