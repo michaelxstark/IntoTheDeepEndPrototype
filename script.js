@@ -1,14 +1,25 @@
 // variables for screen 1
 
 let state;
-let line1Screen1 = "This is an informative, interactive online application for improvisational performances in electronic music.";
-let line2Screen1 = "You will be presented with several impulse questions and statements.";
-let line3Screen1 = "You can explore these by contmeplation and reflection.";
-let line4Screen1 = "Alternatively, you can apply them in practice using the virtual instrument provided by this platform.";
-let line5Screen1 = "Proceed to the next page and click and hold on one of the animations.";
+let line1Screen1 = "This is an informative, interactive online";
+let line2Screen1 = "application for improvisational performances";
+let line3Screen1 = "in electronic music.";
+let line4Screen1 = "You will be presented with several";
+let line5Screen1 = "impulse questions and statements.";
+let line6Screen1 = "You can explore these";
+let line7Screen1 = "by contmeplation and reflection.";
+let line8Screen1 = "Alternatively, you can apply them in practice";
+let line9Screen1 = "using the virtual instrument";
+let line10Screen1 = "provided by this platform.";
+let line11Screen1 = "Proceed to the next page";
+let line12Screen1 = "and click and hold on one of the animations.";
 
 
-let lines = [line1Screen1, line2Screen1, line3Screen1, line4Screen1, line5Screen1];
+let lines = [line1Screen1, line2Screen1, line3Screen1,
+             line4Screen1, line5Screen1, line6Screen1,
+             line7Screen1, line8Screen1, line9Screen1,
+             line10Screen1, line11Screen1, line12Screen1];
+
 let liner = "";
 let counter = 0;
 let lineCount = 0;
