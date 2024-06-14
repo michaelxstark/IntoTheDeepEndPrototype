@@ -111,7 +111,7 @@ function preload(){
 
 
 function setup() {
-  let canvas = createCanvas(windowWidth, windowHeight);
+  let canvas = createCanvas(360, 800);
   canvas.id('canvas-container');
   canvas.style('display', 'block');
   canvas.style('margin', 'auto');
