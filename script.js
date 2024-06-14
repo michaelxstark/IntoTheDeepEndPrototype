@@ -252,7 +252,7 @@ function draw() {
       push();
       fill(0);
       for (let s = 0; s < question1.length; s++){
-        text(question2[s], width*0.05.length, height*0.05+s*height*0.05);
+        text(question2[s], width*0.05, height*0.05+s*height*0.05);
       }
       pop();
     }
@@ -262,7 +262,7 @@ function draw() {
       push();
       fill(0);
       for (let s = 0; s < question1.length; s++){
-        text(question3[s], width*0.05.length, height*0.05+s*height*0.05);
+        text(question3[s], width*0.05, height*0.05+s*height*0.05);
       }
       pop();
     }
@@ -272,7 +272,7 @@ function draw() {
       push();
       fill(0);
       for (let s = 0; s < question1.length; s++){
-        text(question4[s], width*0.05.length, height*0.05+s*height*0.05);
+        text(question4[s], width*0.05, height*0.05+s*height*0.05);
       }
       pop();
     }
