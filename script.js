@@ -203,8 +203,10 @@ function draw() {
 
     // second quater
 
-    for (let i = width*0.25; i < width; i++){
-      line(i, height*0.25, i, (height * 0.5)*abs(sin(radians(frameCount+i))));
+    for (let i = Math.floor(width*0.5); i < width; i++){
+      if (i % 5 == 0){
+        line(i, height*0.5, i, (height * 0.5)*abs(sin(radians(frameCount+i))));
+      }
     }
 
 
@@ -240,7 +242,7 @@ function draw() {
       push();
       fill(0);
       for (let s = 0; s < question1.length; s++){
-        text(question1[s], width*0.4 - question1[0].length, height*0.35+s*height*0.05);
+        text(question1[s], width*0.2 - question1[0].length, height*0.2+s*height*0.05);
       }
       pop();
     }
@@ -250,7 +252,7 @@ function draw() {
       push();
       fill(0);
       for (let s = 0; s < question1.length; s++){
-        text(question2[s], width*0.4 - question1[0].length, height*0.35+s*height*0.05);
+        text(question2[s], width*0.2 - question1[0].length, height*0.2+s*height*0.05);
       }
       pop();
     }
@@ -260,7 +262,7 @@ function draw() {
       push();
       fill(0);
       for (let s = 0; s < question1.length; s++){
-        text(question3[s], width*0.4 - question1[0].length, height*0.35+s*height*0.05);
+        text(question3[s], width*0.2 - question1[0].length, height*0.2+s*height*0.05);
       }
       pop();
     }
@@ -270,7 +272,7 @@ function draw() {
       push();
       fill(0);
       for (let s = 0; s < question1.length; s++){
-        text(question4[s], width*0.4 - question1[0].length, height*0.35+s*height*0.05);
+        text(question4[s], width*0.2 - question1[0].length, height*0.2+s*height*0.05);
       }
       pop();
     }
